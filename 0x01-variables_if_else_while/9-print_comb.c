@@ -13,13 +13,13 @@ int main(void)
 	{
 		for (c2 = c1; c2 <= '9'; ++c2)
 		{
-			putchar(c1 + ', ');
+			putchar(c1);
+			putchar(', ');
 			putchar(c2);
 		}
 		putchar('\n');
 	}
 
-	putchar('\n');
 
 	return (0);
 }
