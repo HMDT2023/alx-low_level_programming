@@ -7,18 +7,16 @@
 
 int main(void)
 {
-	int i1, i2;
+	int i;
 
-	for (i1 = 0; i1 <= 9; ++i1)
+	for (i = 0; i <= 8; ++i)
 	{
-		for (i2 = i1; i2 <= 9; ++i2)
-		{
-			putchar(i1 + '0');
+			putchar(i + '0');
 			putchar(',');
 			putchar(' ');
-			putchar(i2 + '0');
-		}
+		
 	}
+	putchar(i)	
 
 
 	return (0);
