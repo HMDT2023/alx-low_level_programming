@@ -7,16 +7,16 @@
 
 int main(void)
 {
-	char c1, c2;
+	int i1, i2;
 
-	for (c1 = '0'; c1 <= '9'; ++c1)
+	for (i1 = 0; i1 <= 9; ++i1)
 	{
-		for (c2 = c1; c2 <= '9'; ++c2)
+		for (i2 = i1; i2 <= 9; ++i2)
 		{
-			putchar(c1);
+			putchar(i1 + '0');
 			putchar(',');
 			putchar(' ');
-			putchar(c2);
+			putchar(i2 + '0');
 		}
 	}
 
