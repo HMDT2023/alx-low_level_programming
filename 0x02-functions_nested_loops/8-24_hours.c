@@ -32,4 +32,7 @@ void jack_bauer(void)
 		}
 	}
 
+	if (i == 2 && j == 4)
+		break;
+
 }
