@@ -7,7 +7,8 @@
 
 int main(void)
 {
-	positive_or_negative(0);
+	if (positive_or_negative(0) == 0)
+		prinf("0 is zero");
 
 	return (0);
 }
