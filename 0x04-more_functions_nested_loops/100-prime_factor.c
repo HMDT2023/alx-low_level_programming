@@ -31,7 +31,6 @@ int is_prime(int n)
 
 int main(void)
 {
-	
 	long int N = 612852475143;
 	int i, gfactor;
 
