@@ -9,9 +9,9 @@
  * Return: 1 if number is prime. 0 otherwise
  */
 
-long int is_prime(long int n)
+int is_prime(int n)
 {
-	long int i;
+	int i;
 
 	for (i = 2; i < n; i++)
 	{
@@ -33,19 +33,16 @@ int main(void)
 {
 	
 	long int N = 612852475143;
-	long int i, gfactor;
+	int i, gfactor;
 
-	for (i = 2; i <= N; i++)
+	for (i = 2; N != 1; i++)
 	{
-		if (is_prime(i))
+		if ((N % i == 0) && (is_prime(i)))
 		{
-			while (N % i == 0)
-			{
-				N = N / i;
-				gfactor = i;
-			}
+			N = N / i;
+			gfactor = i;
 		}
 	}
-	printf("%ld \n", gfactor);
+	printf("%d\n", gfactor);
 	return (0);
 }
