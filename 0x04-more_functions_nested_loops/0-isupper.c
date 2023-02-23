@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * print_sign - that prints the sign of a number
+  * _isupper- checks for uppercase character
   *
   * @c: refer to the number
   *
