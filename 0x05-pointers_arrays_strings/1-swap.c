@@ -2,8 +2,8 @@
 #include "main.h"
 
 /**
-  *swap_int - Entry code
-  *@a: first pointer variable 
+ *swap_int - Entry code
+  *@a: first pointer variable
   *@b: second pointer variable
   *
   *Return: none
