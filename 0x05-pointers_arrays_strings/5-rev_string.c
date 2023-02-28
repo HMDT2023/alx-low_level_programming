@@ -10,7 +10,7 @@
 
 void rev_string(char *s)
 {
-	int i, l, j = 0;
+	int i, k, l, j = 0;
 	char *p = 0;
 
 	for (i = 0; *(s + i) != '\0'; i++)
@@ -22,9 +22,9 @@ void rev_string(char *s)
 	{
 	}
 
-	for (i = (l - 1) ; i >= 0; i--)
+	for (k = (l - 1) ; k >= 0; k--)
 	{
-		s[j] = p[i];
+		s[j] = p[k];
 		j++;
 	}
 
