@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -12,8 +12,8 @@
 
 void reverse_array(int *a, int n)
 {
-	int i, j, k;
-	int b[n];
+	int i, j;
+	int *b = malloc(n*sizeof(int));
 
 	for (i = 0; i < n; i++)
 	{
@@ -24,4 +24,6 @@ void reverse_array(int *a, int n)
 	{
 		a[j] = b[n - 1 - j];
 	}
+
+	free(b);
 }
