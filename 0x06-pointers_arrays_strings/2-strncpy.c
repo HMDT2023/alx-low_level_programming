@@ -9,7 +9,7 @@
   *@n: var of number of bytes we'll take in src
   *
   *Return: a character
-  */
+ */
 
 char *_strncpy(char *dest, char *src, int n)
 {
