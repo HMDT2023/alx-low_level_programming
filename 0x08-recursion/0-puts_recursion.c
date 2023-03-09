@@ -1,22 +1,20 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
-*_puts_recursion - Entry code
-*@s: string variable
-*Return: none
-*/
-
+ *_puts_recursion - print a string using only _putchar
+ *@s: string to print in stdout
+ *
+ * Return: Nothing
+ */
 void _puts_recursion(char *s)
 {
-	if (*s != '\0')
+	if (*s == 0 || *s == '\0')
 	{
-		return;
+		_putchar('\n');
 	}
-
-	_putchar(*s);
-	s++;
-
-	_puts_recursion(s);
-
+	else
+	{
+		_putchar(*s);
+		_puts_recursion(++s);
+	}
 }
